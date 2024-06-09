@@ -3,26 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfouad <kfouad@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: khalid <khalid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 19:40:43 by kfouad            #+#    #+#             */
-/*   Updated: 2024/06/08 19:47:47 by kfouad           ###   ########.fr       */
+/*   Updated: 2024/06/09 20:08:23 by khalid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-std::string Weapon::weapon(std::strng type)
+
+Weapon::Weapon(std::string type)
 {
-    type = type;
+    this->type = type;
 }
 
 std::string Weapon::getType()
 {
-    return type;    
+    return this->type;    
 }
 
 void Weapon::setType(std::string str)
 {
-    type = str;
+    this->type = str;
+}
+
+Weapon::~Weapon()
+{
 }
